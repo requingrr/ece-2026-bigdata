@@ -7,10 +7,13 @@ authors = [
     { name = "p-vandergucht-ece", email = "pierre.vandergucht@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-bigdata-lab-ece = "bigdata_lab_ece:main"
+dataset-users = "bigdata_lab_ece.dataset_users:main"
+dataset-orders = "bigdata_lab_ece.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
